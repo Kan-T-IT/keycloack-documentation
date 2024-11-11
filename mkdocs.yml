@@ -1,18 +1,12 @@
-site_name: GeoNode Cloud
+site_name: Documentación Keycloack
 site_url: https://kan.com.ar/
 nav:
   - Home: index.md
-  - project/index.md
-  - architecture/index.md
-  - deployment/index.md
-<<<<<<< HEAD
 
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-=======
->>>>>>> 944da7e4a84970b0d042f55ec1c59f1a046759be
 
 theme:
   name: 'material'
@@ -30,15 +24,9 @@ plugins:
   - i18n:
       docs_structure: folder
       languages:
-        - locale: en
-          default: true
-          name: English
-          build: true
         - locale: es
+          default: true
           name: Español
-          build: true
-        - locale: pt
-          name: Português
           build: true
 
 extra:
@@ -47,16 +35,11 @@ extra:
     provider: google
     property: G-Z1CERXCTNQ
   alternate:
-    - name: English
-      lang: en
     - name: Español
       lang: es
       link: es/
-    - name: Portuguese
-      lang: pt
-      link: pt/
 
-repo_url: https://github.com/Kan-T-IT/geonode_cloud_documentation
+repo_url: https://github.com/Kan-T-IT/keycloack-documentation
 
 
   
