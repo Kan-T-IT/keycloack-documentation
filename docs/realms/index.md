@@ -6,6 +6,6 @@ Teniendo una cuenta con acceso a la Consola de Administración, puedes configura
 
 1. Ve a la URL de la Consola de Administración. Por ejemplo, para localhost, usa esta URL: http://localhost:8080/admin/
 
-    ![Signin](../image/sign.png)
+    ![Signin](../images/sign.png)
 
 2. Ingresa el nombre de usuario y la contraseña con permisos de administración. Esta acción mostrará la Consola de Administración.
