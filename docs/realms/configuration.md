@@ -53,7 +53,7 @@ Cada pantalla de la interfaz de usuario en Keycloak está internacionalizada. El
 
 4. Selecciona los idiomas que soportarás.
     
-   ![Internationalization Realm](../images/realm_int.png) 
+   ![Internationalization Realm](../images/realms_int.png) 
     
 La próxima vez que un usuario inicie sesión, podrá elegir un idioma en la página de inicio de sesión para usar en las pantallas de inicio de sesión, la Consola de Cuenta y la Consola de Administración.
 
