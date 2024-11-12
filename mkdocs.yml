@@ -10,6 +10,10 @@ nav:
       - clientes/index.md
       - clientes/clientes_openid_connect.md
       - clientes/clientes_saml.md
+  - Permisos:
+      - index.md
+      - roles.md
+      - grupos.md
 
 markdown_extensions:
   - admonition
