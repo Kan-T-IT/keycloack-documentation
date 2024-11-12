@@ -14,8 +14,6 @@ markdown_extensions:
 
 theme:
   name: 'material'
-  navigation:
-    next_previous: true
   logo: assets/images/logo.png
   favicon: assets/images/favicon.png
   icon:
@@ -24,6 +22,7 @@ theme:
     repo: fontawesome/brands/github
   features:
     - search.suggest
+    - navigation.footer
 
 plugins:
   - search
