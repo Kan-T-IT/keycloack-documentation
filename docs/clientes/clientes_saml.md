@@ -77,3 +77,78 @@ La pestaña Configuración incluye muchas opciones para configurar este cliente.
         Esta opción se aplica a los bindings REDIRECT donde la firma se transfiere en los parámetros de consulta y esta información no se encuentra en la información de la firma. Esto es contrario a los mensajes de binding POST donde el ID de la clave siempre se incluye en la firma del documento.
         Esta opción se utiliza cuando el servidor y el adaptador de Keycloak proporcionan el IDP y el SP. Esta opción solo es relevante cuando Documentos firmados está activado.
 
+### Firma y cifrado
+
+- **Sign Documents**: Cuando está activado, Keycloak firma el documento utilizando la clave privada del realm.
+
+- **Sign Assertions**: La afirmación está firmada e incrustada en la respuesta XML SAML Auth.
+
+- **Signature Algorithm**: El algoritmo utilizado para firmar documentos SAML. Ten en cuenta que los algoritmos basados en SHA1 están obsoletos y pueden ser eliminados en una versión futura. Se recomienda el uso de algún algoritmo más seguro en lugar de *_SHA1. Además, con los algoritmos *_SHA1, la verificación de firmas no funciona si el cliente SAML se ejecuta en Java 17 o superior.
+
+- **SAML Signature Key Name**: Los documentos SAML firmados enviados utilizando binding POST contienen la identificación de la clave de firma en el elemento KeyName. Esta acción puede ser controlada por la opción Nombre de la Clave de Firma SAML. Esta opción controla el contenido de KeyName.
+
+    - **KEY_ID**: El KeyName contiene el ID de la clave. Esta opción es la opción predeterminada.
+
+    - **CERT_SUBJECT**: El KeyName contiene el sujeto del certificado correspondiente a la clave del realm. Esta opción es esperada por Microsoft Active Directory Federation Services.
+
+    - **NONE**: La pista de KeyName se omite completamente del mensaje SAML.
+
+- **Canonicalization Method**: El método de canonicalización para firmas XML.
+
+### Configuración de inicio de sesión
+
+- **Login theme**: Un tema para usar en las páginas de inicio de sesión, OTP, registro de concesiones y contraseña olvidada.
+
+- **Consent required**: Si está habilitado, los usuarios deben dar su consentimiento para el acceso del cliente.
+  Para los clientes del lado del cliente que realizan inicios de sesión en el navegador, como no es posible garantizar que los secretos puedan mantenerse seguros con los clientes del lado del cliente, es importante restringir el acceso configurando las URLs de redirección correctas.
+
+- **Display client on screen**: Este interruptor se aplica si Consentimiento requerido está Off.
+
+    - **Off**: La pantalla de consentimiento contendrá solo los consentimientos correspondientes a los alcances del cliente configurados.
+
+    - **On**: También habrá un elemento en la pantalla de consentimiento sobre este cliente en sí.
+
+- **Client consent screen text**: Aplica si Consentimiento requerido y Mostrar cliente en pantalla están habilitados. Contiene el texto que estará en la pantalla de consentimiento sobre los permisos para este cliente.
+
+### Configuración de cierre de sesión
+
+- **Front channel logout**: Si el **Cierre de sesión por Canal de Frente** está habilitado, la aplicación requiere una redirección del navegador para realizar un cierre de sesión. Por ejemplo, la aplicación puede requerir que se restablezca una cookie, lo que solo podría hacerse a través de una redirección. Si el Cierre de sesión por Canal de Frente está deshabilitado, Keycloak invoca una solicitud SAML en segundo plano para cerrar la sesión de la aplicación.
+
+### Pestaña Claves
+
+- **Encrypt Assertions**: Cifra las afirmaciones en documentos SAML con la clave privada del realm. El algoritmo AES utiliza un tamaño de clave de 128 bits.
+
+- **Client Signature Required**: Si la Firma del Cliente Requerida está habilitada, se espera que los documentos provenientes de un cliente estén firmados. Keycloak validará esta firma utilizando la clave pública del cliente o el certificado configurado en la pestaña Claves.
+
+- **Allow ECP Flow**: Si es verdadero, a esta aplicación se le permite utilizar el perfil ECP de SAML para la autenticación.
+
+### Pestaña Avanzado
+
+Esta pestaña tiene muchos campos para situaciones específicas. Algunos campos se cubren en otros temas. Para obtener detalles sobre otros campos, haz clic en el ícono de interrogación.
+
+### Configuración detallada del punto final SAML
+
+- **Logo URL**: URL que hace referencia a un logotipo para la aplicación Cliente.
+
+- **Policy URL**: URL que el Cliente Parte Dependiente proporciona al Usuario Final para leer sobre cómo se utilizarán los datos del perfil.
+
+- **Terms of Service URL**: URL que el Cliente Parte Dependiente proporciona al Usuario Final para leer los términos de servicio de la Parte Dependiente.
+
+- **Assertion Consumer Service POST Binding URL**: URL de binding POST para el Servicio de Consumidor de Afirmaciones.
+
+- **Assertion Consumer Service Redirect Binding URL**: URL de binding de redirección para el Servicio de Consumidor de Afirmaciones.
+
+- **Logout Service POST Binding URL**: URL de binding POST para el Servicio de Cierre de Sesión.
+
+- **Logout Service Redirect Binding URL**: URL de binding de redirección para el Servicio de Cierre de Sesión.
+
+- **Logout Service Artifact Binding URL**: URL de binding de artefactos para el Servicio de Cierre de Sesión. Cuando se configura junto con la opción Forzar binding de artefactos, el binding de artefactos se fuerza tanto para los flujos de inicio de sesión como de cierre de sesión. El binding de artefactos no se utiliza para el cierre de sesión a menos que se establezca esta propiedad.
+
+- **Logout Service SOAP Binding URL**: URL de binding de redirección para el Servicio de Cierre de Sesión. Solo aplicable si se utiliza el cierre de sesión por canal de fondo.
+
+- **Artifact Binding URL**: URL para enviar los mensajes de artefacto HTTP.
+
+- **Artifact Resolution Service**: URL del punto final SOAP del cliente donde se enviarán los mensajes ArtifactResolve.
+
+Para ver más información sobre la configuración de clients, consulta la [documentación oficial](https://www.keycloak.org/docs/latest/server_admin/index.html#assembly-managing-clients_server_administration_guide)
+
