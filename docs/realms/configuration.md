@@ -26,6 +26,7 @@ Keycloak envía correos electrónicos a los usuarios para verificar sus direccio
     
 3. Rellena los campos y activa los interruptores según sea necesario:
    
+   
    1. **Template**
       
       - **From**: Indica la dirección utilizada para el campo "De" en el encabezado SMTP de los correos electrónicos enviados.
