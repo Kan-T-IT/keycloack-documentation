@@ -1,0 +1,59 @@
+site_name: Documentación Keycloack
+site_url: https://kan.com.ar/
+nav:
+  - Home: index.md
+  - Realms:
+      - realms/index.md
+      - realms/configuration.md
+      - realms/options.md
+  - Clientes:
+      - clientes/index.md
+      - clientes/clientes_openid_connect.md
+      - clientes/clientes_saml.md
+  - Permisos:
+      - permisos/index.md
+      - permisos/roles.md
+      - permisos/grupos.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+
+theme:
+  name: 'material'
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.png
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+    repo: fontawesome/brands/github
+  features:
+    - search.suggest
+    - navigation.footer
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: es
+          default: true
+          name: Español
+          build: true
+
+extra:
+  homepage: https://kan.com.ar
+  analytics:
+    provider: google
+    property: G-Z1CERXCTNQ
+  alternate:
+    - name: Español
+      lang: es
+      link: es/
+
+repo_url: https://github.com/Kan-T-IT/keycloack-documentation
+
+
+  
