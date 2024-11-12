@@ -1,3 +1,5 @@
+# Clientes OpenID Connect
+
 ## Creación de un cliente OpenID Connect
 
 Para proteger una aplicación que utiliza el protocolo **OpenID Connect**, debes crear un cliente.
