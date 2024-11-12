@@ -8,6 +8,7 @@ nav:
       - realms/options.md
   - Clientes:
       - clientes/index.md
+      - clientes/clientes_OpenID_Connect.md
 
 markdown_extensions:
   - admonition
