@@ -2,8 +2,8 @@ site_name: Documentación Keycloack
 site_url: https://kan.com.ar/
 nav:
   - Home: index.md
-  - realms/index.md
-    - ../configuration.md
+  - ./realms/index.md
+    - ./realms/configuration.md
 
 markdown_extensions:
   - admonition # Extension para hacer notas y tips
