@@ -11,9 +11,9 @@ nav:
       - clientes/clientes_openid_connect.md
       - clientes/clientes_saml.md
   - Permisos:
-      - index.md
-      - roles.md
-      - grupos.md
+      - permisos/index.md
+      - permisos/roles.md
+      - permisos/grupos.md
 
 markdown_extensions:
   - admonition
