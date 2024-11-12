@@ -1,4 +1,4 @@
-#  Configuración de realms
+# Realms
 
 Teniendo una cuenta con acceso a la Consola de Administración, puedes configurar realms. Un realm es un espacio donde gestionas objetos, incluidos usuarios, aplicaciones, roles y grupos. Un usuario pertenece a un realm e inicia sesión en él. Una implementación de Keycloak puede definir, almacenar y gestionar tantos realms como permita el espacio en la base de datos.
 
