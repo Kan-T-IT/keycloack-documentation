@@ -10,18 +10,18 @@ Si habilitas la opción "Olvidé mi contraseña", los usuarios pueden restablece
 
 2. Haz clic en la pestaña **Login**.
 
-    ![SSL Realm](../images/forgot_password.png)
+    ![Forgot Password](../images/forgot_password.png)
 
 3. Activa la opción **Forgot password**.
    Un enlace ¿Olvidaste tu contraseña? se mostrará en tus páginas de inicio de sesión.
 
-    ![SSL Realm](../images/forgot_password2.png)
+    ![Forgot Password](../images/forgot_password2.png)
     
 4. Especifica **Host** y **From** en la pestaña **Email** para que Keycloak pueda enviar el correo electrónico de restablecimiento.
 
 5. Haz clic en este enlace para llevar a los usuarios a una página donde pueden ingresar su nombre de usuario o dirección de correo electrónico y recibir un correo electrónico con un enlace para restablecer sus credenciales.
 
-    ![SSL Realm](../images/forgot_password3.png)
+    ![Forgot Password](../images/forgot_password3.png)
     
 El texto enviado en el correo electrónico es configurable. 
 
@@ -35,3 +35,34 @@ Para cambiar este comportamiento, sigue estos pasos:
 
 3. Selecciona el flujo **Reset Credentials**.
 
+    ![Reset Credentials](../images/reset_credentials.png)
+
+4. Si no deseas restablecer el OTP, establece el requisito del sub-flujo **Reset - Conditional OTP** en **Disabled**.
+
+    ![Reset Credentials](../images/reset_credentials2.png)
+
+5. Haz clic en **Authentication** en el menú.
+
+6. Haz clic en la pestaña **Required actions**.
+
+7. Asegúrate de que **Update Password** esté habilitado.
+
+    ![Authentication](../images/authentication.png)
+
+## Habilitar "Recordarme"
+
+Si un usuario que ha iniciado sesión cierra su navegador, su sesión se destruye, y debe volver a iniciar sesión. Puedes configurar Keycloak para mantener la sesión de inicio de sesión abierta si el usuario hace clic en la casilla Recordarme al iniciar sesión. Esta acción convierte la cookie de inicio de sesión de una cookie de sesión a una cookie persistente.
+
+1. Haz clic en **Realm settings (Configuración del realm)**  en el menú.
+
+2. Haz clic en la pestaña **Login**.
+
+3. Activa la opción **Remember Me**.
+
+    ![Remember Me](../images/remember.png)
+
+4. Cuando guardes esta configuración, una casilla de verificación **Remember me** se mostrará en la página de inicio de sesión del realm.
+
+    ![Remember Me](../images/remember_me.png)
+
+Para ver más información sobre la configuración de realms, consulta la [documentación oficial](https://www.keycloak.org/docs/latest/server_admin/index.html#configuring-realms)
