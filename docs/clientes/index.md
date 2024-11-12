@@ -10,7 +10,7 @@ Los clientes son entidades que pueden solicitar la autenticación de un usuario.
 
 Para proteger una aplicación que utiliza el protocolo **OpenID Connect**, debes crear un cliente.
 
-    ![Clients](../images/clients.png)
+![Clients](../images/clients.png)
 
 1. Haz clic en **Clients** en el menú.
 
@@ -40,7 +40,7 @@ Esta acción crea el cliente y te lleva a la pestaña Configuración, donde pued
 
 La pestaña de Configuración incluye muchas opciones para configurar este cliente.
 
-    ![Clients](../images/test_client.png)
+![Clients](../images/test_client.png)
 
 ### Configuración general
 
