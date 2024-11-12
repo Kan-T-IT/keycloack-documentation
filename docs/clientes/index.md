@@ -10,7 +10,7 @@ Los clientes son entidades que pueden solicitar la autenticación de un usuario.
 
 Para proteger una aplicación que utiliza el protocolo **OpenID Connect**, debes crear un cliente.
 
-    ![Clients](../images/client.png)
+    ![Clients](../images/clients.png)
 
 1. Haz clic en **Clients** en el menú.
 
@@ -22,15 +22,15 @@ Para proteger una aplicación que utiliza el protocolo **OpenID Connect**, debes
 
 4. Ingresa un **Client ID**.
 
-!!! tip
+    !!! tip
 
-    Este ID es una cadena alfanumérica que se utiliza en las solicitudes OIDC y en la base de datos de Keycloak para identificar al cliente.
+        Este ID es una cadena alfanumérica que se utiliza en las solicitudes OIDC y en la base de datos de Keycloak para identificar al cliente.
 
 5. Proporciona un **Nombre** para el cliente.
 
-!!! tip
+    !!! tip
 
-    Si planeas localizar este nombre, configura un valor de cadena de reemplazo. Por ejemplo, un valor de cadena como ${myapp}.
+        Si planeas localizar este nombre, configura un valor de cadena de reemplazo. Por ejemplo, un valor de cadena como ${myapp}.
 
 6. Haz clic en **Next** en las ventanas siguientes, manteniendo los datos predeterminados, hasta que puedas guardar la información del nuevo cliente.
 
