@@ -14,6 +14,8 @@ markdown_extensions:
 
 theme:
   name: 'material'
+  navigation:
+    next_previous: true
   logo: assets/images/logo.png
   favicon: assets/images/favicon.png
   icon:
