@@ -39,3 +39,39 @@ Esta acción crea el cliente y te lleva a la pestaña Configuración, donde pued
 ### Configuración básica
 
 La pestaña de Configuración incluye muchas opciones para configurar este cliente.
+
+    ![Clients](../images/test_client.png)
+
+### Configuración general
+
+- **Client ID**: La cadena alfanumérica que se utiliza en las solicitudes OIDC y en la base de datos de Keycloak para identificar al cliente.
+
+- **Name**: El nombre para el cliente en la pantalla de la UI de Keycloak. Para localizar el nombre, configura un valor de cadena de reemplazo. Por ejemplo, un valor de cadena como ${myapp}.
+
+- **Description**: La descripción del cliente. Esta configuración también se puede localizar.
+
+- **Always Display in Console**: Siempre listar este cliente en la Consola de Cuenta, incluso si este usuario no tiene una sesión activa.
+
+### Configuración de acceso
+
+- **Root URL**: Si Keycloak utiliza URLs relativas configuradas, este valor se antepone a ellas.
+
+- **Home URL**: Proporciona la URL predeterminada para cuando el servidor de autenticación necesita redirigir o enlazar de nuevo al cliente.
+
+- **Valid Redirect URIs**: Campo obligatorio. Ingresa un patrón de URL y haz clic en + para agregar y en - para eliminar URLs existentes, luego haz clic en Save. Se utiliza una coincidencia exacta (sensible a mayúsculas) para comparar las URIs de redirección válidas.
+  Puedes usar comodines al final del patrón de URL, por ejemplo, [http://host.com/path/*](http://host.com/path/*). Para evitar problemas de seguridad, si la URI de redirección pasada contiene la parte de información del usuario o su ruta gestiona el acceso al directorio padre (/../), no se realiza una comparación con comodín, sino una coincidencia exacta estándar y segura.
+  El comodín completo * también se puede configurar como una URI de redirección válida para permitir cualquier URI de redirección http o https. No lo uses en entornos de producción.
+  Los patrones de URI de redirección exclusivos suelen ser más seguros. Consulta URIs de Redirección No Específicas para más información.
+
+- **Web Origins**: Ingresa un patrón de URL y haz clic en + para agregar y en - para eliminar URLs existentes. Haz clic en Guardar.
+  Esta opción maneja el Intercambio de Recursos de Origen Cruzado (CORS). Si el JavaScript del navegador intenta una solicitud HTTP AJAX a un servidor cuyo dominio es diferente del que proviene el código JavaScript, la solicitud debe usar CORS. El servidor debe manejar las solicitudes CORS, de lo contrario, el navegador no mostrará ni permitirá que se procese la solicitud. Este protocolo protege contra ataques XSS, CSRF y otros basados en JavaScript.
+  Las URLs de dominio listadas aquí se incrustan dentro del token de acceso enviado a la aplicación cliente. La aplicación cliente utiliza esta información para decidir si permitir que se invoque una solicitud CORS en ella. Solo los adaptadores de cliente de Keycloak soportan esta característica. Consulta la Guía de Seguridad de Aplicaciones y Servicios para más información.
+
+- **Admin URL**: Punto de retorno de llamada para un cliente. El servidor utiliza esta URL para realizar devoluciones de llamada, como empujar políticas de revocación, realizar un cierre de sesión de backchannel y otras operaciones administrativas. Para los adaptadores de servlet de Keycloak, esta URL puede ser la URL raíz de la aplicación servlet. Para más información, consulta la Guía de Seguridad de Aplicaciones y Servicios.
+
+
+
+
+
+
+
