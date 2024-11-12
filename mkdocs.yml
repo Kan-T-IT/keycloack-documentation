@@ -2,7 +2,8 @@ site_name: Documentación Keycloack
 site_url: https://kan.com.ar/
 nav:
   - Home: index.md
-  - realms/index.md
+  - Realms:
+      - realms/index.md
       - realms/configuration.md
 
 markdown_extensions:
