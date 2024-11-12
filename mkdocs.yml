@@ -5,6 +5,7 @@ nav:
   - Realms:
       - realms/index.md
       - realms/configuration.md
+      - realms/options.md
 
 markdown_extensions:
   - admonition
