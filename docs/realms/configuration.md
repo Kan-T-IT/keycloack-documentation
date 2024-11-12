@@ -19,6 +19,7 @@ Cada realm tiene un Modo SSL asociado, que define los requisitos de SSL/HTTPS pa
 Keycloak envía correos electrónicos a los usuarios para verificar sus direcciones de correo electrónico, cuando olvidan sus contraseñas o cuando un administrador necesita recibir notificaciones sobre un evento del servidor. Para habilitar que Keycloak envíe correos electrónicos, debes proporcionar a Keycloak la configuración de tu servidor SMTP.
 
 1. Haz clic en **Realm settings (Configuración del realm)** en el menú.
+
 2. Haz clic en la pestaña **Email (Correo electrónico)**.
 
     ![SSL Realm](../images/realm_mail.png)

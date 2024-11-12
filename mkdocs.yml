@@ -6,10 +6,10 @@ nav:
     - realms/configuration.md
 
 markdown_extensions:
-  - admonition # Extension para hacer notas y tips
+  - admonition
   - pymdownx.details
   - pymdownx.superfences
-  - def_list #Extension para hacer listas ordenadas
+  - def_list
     - pymdownx.tasklist:
       custom_checkbox: true
 
