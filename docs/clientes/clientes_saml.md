@@ -72,8 +72,8 @@ La pestaña Configuración incluye muchas opciones para configurar este cliente.
 
 - **Optimize REDIRECT signing key lookup**: Cuando está activado, los mensajes de protocolo SAML incluyen la extensión nativa de Keycloak. Esta extensión contiene una pista con el ID de la clave de firma. El SP utiliza la extensión para la validación de la firma en lugar de intentar validar la firma utilizando claves.
 
-   !!! note
+    !!! note
 
-       Esta opción se aplica a los bindings REDIRECT donde la firma se transfiere en los parámetros de consulta y esta información no se encuentra en la información de la firma. Esto es contrario a los mensajes de binding POST donde el ID de la clave siempre se incluye en la firma del documento.
-       Esta opción se utiliza cuando el servidor y el adaptador de Keycloak proporcionan el IDP y el SP. Esta opción solo es relevante cuando Documentos firmados está activado.
+        Esta opción se aplica a los bindings REDIRECT donde la firma se transfiere en los parámetros de consulta y esta información no se encuentra en la información de la firma. Esto es contrario a los mensajes de binding POST donde el ID de la clave siempre se incluye en la firma del documento.
+        Esta opción se utiliza cuando el servidor y el adaptador de Keycloak proporcionan el IDP y el SP. Esta opción solo es relevante cuando Documentos firmados está activado.
 
