@@ -1,5 +1,9 @@
 # Clientes OpenID Connect
 
+## Gestión de clientes OpenID Connect
+
+[OpenID Connect](https://www.keycloak.org/docs/latest/server_admin/index.html#con-oidc_server_administration_guide) es el protocolo recomendado para asegurar aplicaciones. Fue diseñado desde el principio para ser compatible con la web y funciona mejor con aplicaciones HTML5/JavaScript.
+
 ## Creación de un cliente OpenID Connect
 
 Para proteger una aplicación que utiliza el protocolo **OpenID Connect**, debes crear un cliente.

@@ -9,6 +9,7 @@ nav:
   - Clientes:
       - clientes/index.md
       - clientes/clientes_openid_connect.md
+      - clientes/clientes_saml.md
 
 markdown_extensions:
   - admonition
