@@ -23,10 +23,9 @@ Keycloak envía correos electrónicos a los usuarios para verificar sus direccio
 2. Haz clic en la pestaña **Email (Correo electrónico)**.
 
     ![SSL Realm](../images/realm_mail.png)
-    
+  
 3. Rellena los campos y activa los interruptores según sea necesario:
-   
-   
+
    1. **Template**
       
       - **From**: Indica la dirección utilizada para el campo "De" en el encabezado SMTP de los correos electrónicos enviados.
