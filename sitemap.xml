@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://kan.com.ar/</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://kan.com.ar/"/>
+    </url>
+    <url>
+        <loc>https://kan.com.ar/clientes/</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://kan.com.ar/clientes/"/>
+    </url>
+    <url>
+        <loc>https://kan.com.ar/clientes/clientes_openid_connect/</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://kan.com.ar/clientes/clientes_openid_connect/"/>
+    </url>
+    <url>
+        <loc>https://kan.com.ar/clientes/clientes_saml/</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://kan.com.ar/clientes/clientes_saml/"/>
+    </url>
+    <url>
+        <loc>https://kan.com.ar/permisos/</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://kan.com.ar/permisos/"/>
+    </url>
+    <url>
+        <loc>https://kan.com.ar/permisos/grupos/</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://kan.com.ar/permisos/grupos/"/>
+    </url>
+    <url>
+        <loc>https://kan.com.ar/permisos/roles/</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://kan.com.ar/permisos/roles/"/>
+    </url>
+    <url>
+        <loc>https://kan.com.ar/realms/</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://kan.com.ar/realms/"/>
+    </url>
+    <url>
+        <loc>https://kan.com.ar/realms/configuration/</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://kan.com.ar/realms/configuration/"/>
+    </url>
+    <url>
+        <loc>https://kan.com.ar/realms/options/</loc>
+        <lastmod>2024-11-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="es" href="https://kan.com.ar/realms/options/"/>
+    </url>
+</urlset>
